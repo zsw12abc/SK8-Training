@@ -1,0 +1,41 @@
+<!-- home.html -->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Home Page</h1>
+    </div>
+
+    <div class="container" ng-controller="mainController">
+        <div class="content">
+            <div class="grid" ng-repeat="phone in phones">
+	            <product-cell></product-cell>
+				<p>hello</p>
+
+
+
+                <!-- div class="grid" ng-repeat="catalogue in catalogues"> -->
+
+<!--
+                <figure class="effect-lily" ng-repeat="phone in phones">
+                    <img src="{{phone.imageUrl}}" alt="img12">
+
+                    <figcaption>
+                        <div>
+                            <h2>{{phone.name}}</h2>
+
+                            <p>{{phone.snippet}}</p>
+                        </div><a href="#">View more</a>
+                    </figcaption>
+                </figure>
+-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

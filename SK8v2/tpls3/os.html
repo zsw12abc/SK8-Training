@@ -1,0 +1,24 @@
+<div class=" text-center">
+    <h1>OS Page</h1>
+</div>
+
+<div class="container">
+    <div class="content">
+        <div class="grid">
+            <!-- div class="grid" ng-repeat="catalogue in catalogues"> -->
+
+            <figure class="effect-lily" ng-repeat="phone in phones">
+                <img src="{{phone.imageUrl}}" alt="img12">
+
+                <figcaption>
+                    <div>
+                        <h2>{{phone.name}}</h2>
+
+                        <p>{{phone.snippet}}</p>
+                    </div><a href="#">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+

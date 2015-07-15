@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html ng-app="MyApp">
+<head>
+    <link href="css/style.css" media="screen" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="../../angular-1.4.2/angular.js">
+</script>
+    <script src="../../angular-1.4.2/angular-route.js">
+</script>
+    <script src="js/app.js">
+</script>
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+    <title></title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav nav-pills nav-stacked">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mobile OS</a>
+
+                <ul id="submenu" class="dropdown-menu pull-right">
+                    <li id="submenu">
+                        <a href="#">iOS</a>
+                    </li>
+
+                    <li id="submenu">
+                        <a href="#">Windows Phone</a>
+                    </li>
+
+                    <li id="submenu">
+                        <a href="#">Android</a>
+                    </li>
+
+                    <li id="submenu">
+                        <a href="#">Ubuntu Mobile</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <div ng-view=""></div>
+    </div>
+
+    <footer>
+        <ul class="nav nav-pills nav-stacked">
+            <li>
+                <a href="#">Shaowei Zhang</a>
+            </li>
+
+            <li>
+                <a href="mailto:shaoweizhang.job@gmail.com">Email Me</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
